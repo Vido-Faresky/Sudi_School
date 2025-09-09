@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">My name is Sudi School Website Team and I'm a web developer, from Indonesia</p>
+<p align="left">Our name is Sudi School Website Team and I'm a web developer, from Indonesia</p>
 
 ###
 
