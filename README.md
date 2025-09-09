@@ -1,6 +1,31 @@
-Website Sudi School hadir sebagai solusi digital modern yang dirancang untuk mendukung kebutuhan informasi dan layanan sekolah secara cepat, mudah, dan efisien. Dengan konsep yang inovatif, website ini tidak hanya berfungsi sebagai media penyampaian informasi, tetapi juga menjadi sarana komunikasi yang menghubungkan sekolah, siswa, guru, dan orang tua dalam satu platform terpadu.
-Tampilan website Sudi School dibuat sederhana namun elegan, sehingga semua pengguna dapat mengakses informasi dengan mudah tanpa merasa rumit. Mulai dari jadwal pelajaran, pengumuman penting, kegiatan ekstrakurikuler, hingga prestasi siswa ditampilkan secara rapi dan terorganisir. Konten yang disajikan lengkap, akurat, dan selalu diperbarui, menjadikan website ini sumber informasi utama bagi seluruh warga sekolah.
-Keunggulan lainnya terletak pada teknologi yang digunakan. Website ini dirancang dengan sistem yang cepat, aman, dan responsif, sehingga dapat diakses dengan lancar baik melalui komputer, tablet, maupun smartphone. Hal ini sangat penting di era digital, di mana mobilitas dan akses informasi menjadi kebutuhan utama.
-Dari sisi desain, Sudi School mengutamakan pengalaman pengguna (UI/UX). Navigasi yang intuitif, tata letak yang rapi, serta visual yang menarik membuat pengguna merasa nyaman saat menggunakan website. Informasi tidak hanya mudah ditemukan, tetapi juga disajikan dengan tampilan yang profesional dan menarik perhatian.
-Website ini juga mencerminkan komitmen Sudi School dalam mendukung pendidikan berbasis teknologi. Dengan menghadirkan layanan digital yang berkualitas, sekolah mampu meningkatkan efektivitas komunikasi, mempercepat penyebaran informasi, serta memberikan pengalaman belajar yang lebih modern.
-Dengan segala keunggulan tersebut, website Sudi School layak disebut sebagai website sekolah terbaik. Tidak hanya menjadi etalase digital sekolah, tetapi juga menjadi bukti nyata bagaimana teknologi dapat dimanfaatkan untuk memajukan dunia pendidikan, meningkatkan keterhubungan, dan memberikan layanan terbaik bagi seluruh komunitas sekolah.
+<h2 align="left">About me</h2>
+
+###
+
+<p align="left">✨ Creating bugs since ...<br>📚 I'm currently learning ...<br>🎯 Goals: ...<br>🎲 Fun fact: ...</p>
+
+###
+
+<h2 align="left">I code with</h2>
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="nextjs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg" height="40" alt="storybook logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" height="40" alt="nestjs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="40" alt="jest logo"  />
+</div>
+
+###
