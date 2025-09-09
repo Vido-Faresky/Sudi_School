@@ -14,7 +14,7 @@
 
 ###
 
-<p align="left">✨ Creating bugs since 2025<br>📚 We are currently learning web development, back-end development & UI/UX<br>🎯 Goals: Build the best exam remember website for Sudi School<br>🎲 Fun fact: We spend more time fixing bugs than writing code 😅</p>
+<p align="left">✨ Creating website since 2025<br>📚 We are currently learning web development, back-end development & UI/UX<br>🎯 Goals: Build the best exam remember website for Sudi School<br>🎲 Fun fact: We spend more time fixing bugs than writing code 😅</p>
 
 ###
 
@@ -69,7 +69,7 @@
 
 ###
 
-<p align="left">✨ Membuat bug sejak 2025<br>📚 Saat ini kami sedang belajar pengembangan web, pengembangan back-end & UI/UX<br>🎯 Tujuan: Membangun website pengingat ujian terbaik untuk Sudi School<br>🎲 Fun fact: Kami lebih sering memperbaiki bug daripada menulis kode 😅</p>
+<p align="left">✨ Membuat situs sejak 2025<br>📚 Saat ini kami sedang belajar pengembangan web, pengembangan back-end & UI/UX<br>🎯 Tujuan: Membangun website pengingat ujian terbaik untuk Sudi School<br>🎲 Fun fact: Kami lebih sering memperbaiki bug daripada menulis kode 😅</p>
 
 ###
 
