@@ -16,7 +16,7 @@
     </a>
   </div>
 
-  <div class="Daff">
+  <div class="Daff" id="Daff">
     <form action="../index.php">
       <label>Email</label>
       <input type="email" name="username" placeholder="Masukkan Email" required />
@@ -29,9 +29,10 @@
 
     <div class="pwc">
       <label>Konfirmasi Password</label>
-      <input id="passwordd" type="password" name="password" placeholder="Masukkan Password" required />
+      <input id="konfir" type="password" name="password" placeholder="Masukkan Password" required />
       <span class="matapw" onclick="munculpww()"><img id="mataaa" class="Mata" src="../Foto/PWTutup.png"></span>
     </div>
+    <p id="error" style="color:red; display:none; margin-top: -20px;">⚠ Password dan Konfirmasi Password tidak sama!</p>
 
       <div class="Ingat">
         <label><input type="checkbox" /> Ingatkan Saya</label>
@@ -39,7 +40,7 @@
 
         <button type="submit" class="Daftar">DAFTAR</button>
     </form>
-    
+
     <a href="https://www.facebook.com/?locale2=id_ID&_rdr">
       <button class="Medsos facebook">
         Lanjutkan Dengan Akun Facebook
