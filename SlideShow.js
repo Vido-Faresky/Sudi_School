@@ -31,4 +31,4 @@ function slideShow() {
 }
 
 slideShow();
-};
+};3
