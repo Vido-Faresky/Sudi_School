@@ -19,7 +19,7 @@
   <div class="Login">
     <form action="../index.php">
       <label>Email</label>
-      <input type="email" name="username" required />
+      <input type="email" name="username" placeholder="Masukkan Email" required />
 
     <div class="pwc">
       <label>Password</label>
