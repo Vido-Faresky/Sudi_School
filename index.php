@@ -34,7 +34,6 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/TLJ.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">TLJ</p>
                 </div>
         </div>
     </a>
@@ -42,7 +41,6 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/PPL.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">PPL</p>
                 </div>
         </div>
     </a>
@@ -50,7 +48,6 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/ING.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">ING</p>
                 </div>
         </div>
     </a>
@@ -58,7 +55,6 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/PP.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">PP</p>
                 </div>
         </div>
     </a>
@@ -69,7 +65,6 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/DAMI.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">DAMI</p>
                 </div>
         </div>
     </a>
@@ -77,14 +72,12 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/PDL.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">PDL</p>
                 </div>
         </div>
     <a href="../Deskripsi Produk/AGM.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/AGM.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">AGM</p>
                 </div>
         </div>
     </a>
@@ -92,7 +85,6 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/BI.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">BI</p>
                 </div>
         </div>
     </a>
@@ -103,7 +95,6 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/MTK.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">MTK</p>
                 </div>
         </div>
     </a>
@@ -111,7 +102,6 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/PWL.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">PWL</p>
                 </div>
         </div>
     </a>
@@ -119,7 +109,6 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/PJOK.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">PJOK</p>
                 </div>
         </div>
     </a>
@@ -127,7 +116,6 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/PKdK.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">PKdK</p>
                 </div>
         </div>
     </a>
@@ -138,7 +126,6 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/SJRH.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">SJRH</p>
                 </div>
         </div>
     </a>
@@ -146,7 +133,6 @@
         <div class="MOB">
             <img class="FMOB" src="../Foto/MAN.png" >
                 <div class="PMOB">
-                    <p style="font-weight: normal;">MAN</p>
                 </div>
         </div>
     </a>

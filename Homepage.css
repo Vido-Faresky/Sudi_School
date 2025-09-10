@@ -84,9 +84,10 @@
 }
 
 .FMOB {
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
     margin-top: -20px;
+    border-radius: 20px;
 }
 
 .MoB1 {
@@ -112,9 +113,7 @@
 }
 
 .MOB {
-    background-color: #ffddec;
-    padding: 50px;
-    border-radius: 20px;
+    padding: 40px;
 }
 
 .Footer {

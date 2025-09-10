@@ -36,7 +36,7 @@
     <a style="text-decoration: none; color: black;" href="PPL.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/PPL.png" >
-    <p>PPL</p>
+    
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="ING.php">

@@ -162,7 +162,7 @@ body {
 
 .Lainnya {
     display: flex;
-    gap: 70px;
+    gap: 40px;
     padding-top: 20px;
     height: 350px;
     overflow-x: auto;
@@ -171,19 +171,17 @@ body {
 }
 
 .Lainnya .LainB {
-    border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
-    width: 200px;
+    width: 220px;
     flex-shrink: 0;
-    background: #ffddec;
     height: 270px;
 }
 
 .Lainnya img {
     width: 100%;
     border-radius: 5px;
-    height: 200px;
+    height: 220px;
 }
 
 .LainB h4, .LainB p {

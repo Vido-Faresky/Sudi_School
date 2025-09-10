@@ -29,79 +29,66 @@
 <a style="text-decoration: none; color: black;" href="TLJ.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/TLJ.png" >
-    <p>TLJ</p>
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="PPL.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/PPL.png" >
-    <p>PPL</p>
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="ING.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/ING.png" >
-    <p>ING</p>
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="PP.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/PP.png" >
-    <p>PP</p>
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="DAMI.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/DAMI.png" >
-    <p>DAMI</p>
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="PDL.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/PDL.png" >
-    <p>PDL</p>
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="AGM.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/AGM.png" >
-    <p>AGM</p>
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="BI.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/BI.png" >
-    <p>BI</p>
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="MTK.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/MTK.png" >
-    <p>MTK</p>
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="PWL.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/PWL.png" >
-    <p>PWL</p>
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="PJOK.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/PJOK.png" >
-    <p>PJOK</p>
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="PKdK.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/PKDK.png" >
-    <p>PKdK</p>
     </div>
     </a>
     <a style="text-decoration: none; color: black;" href="SJRH.php">
     <div class="LainB" style="height: 270px;">
     <img class="Fott" src="../Foto/SJRH.png" >
-    <p>SJRH</p>
     </div>
     </a>
 </div>
