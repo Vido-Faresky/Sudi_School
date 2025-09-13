@@ -30,28 +30,28 @@
     </div>
 
 <div class="MoB1">
-    <a href="../Deskripsi Produk/TLJ.php">
+    <a href="../Deskripsi/TLJ.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/TLJ.png" >
                 <div class="PMOB">
                 </div>
         </div>
     </a>
-    <a href="../Deskripsi Produk/PPL.php">
+    <a href="../Deskripsi/PPL.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/PPL.png" >
                 <div class="PMOB">
                 </div>
         </div>
     </a>
-    <a href="../Deskripsi Produk/ING.php">
+    <a href="../Deskripsi/ING.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/ING.png" >
                 <div class="PMOB">
                 </div>
         </div>
     </a>
-    <a href="../Deskripsi Produk/PP.php">
+    <a href="../Deskripsi/PP.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/PP.png" >
                 <div class="PMOB">
@@ -61,27 +61,27 @@
 </div>
 
 <div class="MoB1">
-    <a href="../Deskripsi Produk/DAMI.php">
+    <a href="../Deskripsi/DAMI.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/DAMI.png" >
                 <div class="PMOB">
                 </div>
         </div>
     </a>
-    <a href="../Deskripsi Produk/PDL.php">
+    <a href="../Deskripsi/PDL.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/PDL.png" >
                 <div class="PMOB">
                 </div>
         </div>
-    <a href="../Deskripsi Produk/AGM.php">
+    <a href="../Deskripsi/AGM.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/AGM.png" >
                 <div class="PMOB">
                 </div>
         </div>
     </a>
-    <a href="../Deskripsi Produk/BI.php">
+    <a href="../Deskripsi/BI.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/BI.png" >
                 <div class="PMOB">
@@ -91,28 +91,28 @@
 </div>
 
 <div class="MoB1">
-    <a href="../Deskripsi Produk/MTK.php">
+    <a href="../Deskripsi/MTK.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/MTK.png" >
                 <div class="PMOB">
                 </div>
         </div>
     </a>
-    <a href="../Deskripsi Produk/PWL.php">
+    <a href="../Deskripsi/PWL.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/PWL.png" >
                 <div class="PMOB">
                 </div>
         </div>
     </a>
-    <a href="../Deskripsi Produk/PJOK.php">
+    <a href="../Deskripsi/PJOK.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/PJOK.png" >
                 <div class="PMOB">
                 </div>
         </div>
     </a>
-    <a href="../Deskripsi Produk/PKdK.php">
+    <a href="../Deskripsi/PKdK.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/PKdK.png" >
                 <div class="PMOB">
@@ -122,14 +122,14 @@
 </div>
 
 <div class="MoB1">
-    <a href="../Deskripsi Produk/SJRH.php">
+    <a href="../Deskripsi/SJRH.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/SJRH.png" >
                 <div class="PMOB">
                 </div>
         </div>
     </a>
-    <a href="../Deskripsi Produk/MAN.php">
+    <a href="../Deskripsi/MAN.php">
         <div class="MOB">
             <img class="FMOB" src="../Foto/MAN.png" >
                 <div class="PMOB">

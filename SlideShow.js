@@ -3,7 +3,7 @@ const slideS = document.querySelector('.SlideS');
 const slides = document.querySelectorAll('.Slide');
 
 const links = [
-  "../Deskripsi Produk/Deadline.php",
+  "../Deskripsi/Deadline.php",
 ];
 
 slides.forEach((slide, index) => {
