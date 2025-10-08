@@ -1,5 +1,5 @@
 <?php
-require_once '../../config/db-connection.php';
+require_once '../components/koneksi.php';
 
 if (isset($_POST['store'])) {
     $name = htmlspecialchars($_POST['name']);
