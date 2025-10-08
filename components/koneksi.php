@@ -1,8 +1,13 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "pengingat";
+    $host = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "Sudi-School";
 
-$connect = mysqli_connect($host, $user, $pass, $db);
+    $connection = mysqli_connect($host, $username, $password, $database);
+
+    if (!$connection) {
+        die('Error to connect database: ' . mysqli_connect_error());
+    }
+    
 ?>
