@@ -10,7 +10,7 @@
 <body>
 
   <div class="header">
-    <span>MASUK</span>
+    <span>Register</span>
     <a href="../index.php">
     <span class="close" style="text-decoration: none;">X</span>
     </a>
@@ -38,7 +38,7 @@
         <label><input type="checkbox" /> Ingatkan Saya</label>
       </div>
 
-        <button type="submit" name="store" class="Daftar">DAFTAR</button>
+        <button type="submit" name="store" class="Daftar">Register</button>
     </form>
 
     <a href="https://www.facebook.com/?locale2=id_ID&_rdr">

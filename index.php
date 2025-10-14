@@ -16,7 +16,7 @@
             </button>
             <div class="Masukk">
                 <a class="Masuk" href="../Login/Login.php">Login</a>
-                <a class="Masuk" style="margin-left: 1600px;" href="../Login/Daftar.php">Daftar</a>
+                <a class="Masuk" style="margin-left: 1600px;" href="../Login/Daftar.php">Register</a>
             </div>
         </header>
 </div>

@@ -10,14 +10,14 @@
 <body>
 
   <div class="header">
-    <span>MASUK</span>
+    <span>Login</span>
     <a href="../index.php">
     <span class="close" style="text-decoration: none;">X</span>
     </a>
   </div>
 
   <div class="Login">
-    <form action="../index.php">
+    <form method="POST" action="../actions/users/login.php">
       <label>Email</label>
       <input type="email" name="username" placeholder="Masukkan Email" required />
 
@@ -32,7 +32,7 @@
         <a href="#">Lupa Password</a>
       </div>
 
-        <button type="submit" class="Masuk" >MASUK</button>
+        <button type="submit" class="Masuk" name="login" >Login</button>
     </form>
 
     <a href="https://www.facebook.com/?locale2=id_ID&_rdr">
