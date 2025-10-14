@@ -2,7 +2,7 @@
     $host = "localhost";
     $username = "root";
     $password = "";
-    $database = "Sudi-School";
+    $database = "simple_crud_11_tkj_1";
 
     $connection = mysqli_connect($host, $username, $password, $database);
 

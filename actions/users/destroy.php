@@ -1,5 +1,5 @@
 <?php
-    require_once '../components/koneksi.php';
+    require_once '../../config/db-connection.php';
     if(isset($_POST['destroy'])) {
         $query="DELETE FROM users WHERE id = ?";
 
@@ -10,7 +10,7 @@
         $stmt->execute();
 
         if($stmt->affected_rows > 0) {
-            header('Location: ../index.php');
+            header('Location: ../../pages/users/index.php');
             exit;
         } else {
             echo 'Error to delete user: ' . $stmt->error;

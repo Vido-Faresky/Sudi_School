@@ -1,5 +1,5 @@
 <?php
-require_once '../components/koneksi.php';
+require_once '../../config/db-connection.php';
 
 $users = [];
 
