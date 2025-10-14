@@ -19,12 +19,12 @@
   <div class="Daff" id="Daff">
     <form method="POST" action="../actions/users/store.php">
       <label>Email</label>
-      <input type="email" name="username" placeholder="Masukkan Email" required />
+      <input type="email" name="username" placeholder="Masukkan Email" name="email" required />
 
     <div class="pwc">
       <label>Password</label>
       <input id="password" type="password" name="password" placeholder="Masukkan Password" required />
-      <span class="matapw" onclick="munculpw()"><img id="mataa" class="Mata" src="../Foto/PWTutup.png"></span>
+      <span class="matapw" onclick="munculpw()"><img id="mataa" class="Mata" name="password" src="../Foto/PWTutup.png"></span>
     </div>
 
     <div class="pwc">
@@ -32,7 +32,7 @@
       <input id="konfir" type="password" name="password" placeholder="Masukkan Password" required />
       <span class="matapw" onclick="munculpww()"><img id="mataaa" class="Mata" src="../Foto/PWTutup.png"></span>
     </div>
-    <p id="error" style="color:red; display:none; margin-top: -20px;">⚠ Password dan Konfirmasi Password tidak sama!</p>
+    <!-- <p id="error" style="color:red; display:none; margin-top: -20px;">⚠ Password dan Konfirmasi Password tidak sama!</p> -->
 
       <div class="Ingat">
         <label><input type="checkbox" /> Ingatkan Saya</label>
