@@ -20,12 +20,12 @@
             $query = "INSERT INTO users (email, password) VALUES (?, ?)";
 
             $stmt = $connection->prepare($query);
-            $stmt->bind_param('sss',$email, $passwordHashed);
+            $stmt->bind_param('ss',$email, $passwordHashed);
             $stmt->execute();
 
             if ($stmt->affected_rows > 0) {
                 $stmt->close();
-                header('Location: ../../index.php');
+                header('Location: ../../index2.php');
                 exit();
             } else {
                 echo "
