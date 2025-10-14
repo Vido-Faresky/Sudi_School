@@ -6,21 +6,12 @@
         $password = $_POST['password'];
         $passwordConfirmation = $_POST['confirm'];
 
-        if ($password != $passwordConfirmation) {
-            echo "
-                <script>
-                    alert('Password and Password Confirmation are not match');
-                    window.location.href = '../../pages/register/index.php';
-                </script>
-            ";
-            } 
-
         } else {
             $passwordHashed = password_hash($password, PASSWORD_BCRYPT);
-            $query = "INSERT INTO users (email, password) VALUES (?, ?)";
+            $query = "INSERT INTO users (email, password,) VALUES (?, ?)";
 
             $stmt = $connection->prepare($query);
-            $stmt->bind_param('ss',$email, $passwordHashed);
+            $stmt->bind_param('sss',$email, $passwordHashed);
             $stmt->execute();
 
             if ($stmt->affected_rows > 0) {

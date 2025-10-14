@@ -22,17 +22,17 @@ function munculpww() {
     }
 }
 
-  // const form = document.getElementById("Daff");
-  // const password = document.getElementById("password");
-  // const konfir = document.getElementById("konfir");
-  // const error = document.getElementById("error");
+  const form = document.getElementById("Daff");
+  const password = document.getElementById("password");
+  const konfir = document.getElementById("konfir");
+  const error = document.getElementById("error");
 
-  // form.addEventListener("submit", function(event) {
-  //   if (password.value !== konfir.value) {
-  //     event.preventDefault();
-  //     error.style.display = "block";
-  //   } else {
-  //     error.style.display = "none";
-  //     alert("Pendaftaran berhasil!");
-  //   }
-  // });
+  form.addEventListener("submit", function(event) {
+    if (password.value !== konfir.value) {
+      event.preventDefault();
+      error.style.display = "block";
+    } else {
+      error.style.display = "none";
+      alert("Pendaftaran berhasil!");
+    }
+  });
