@@ -20,7 +20,7 @@
             if ($isPasswordMatch) {
                 session_regenerate_id(true);
                 $_SESSION['user'] = $user;
-                header('Location: ../../index.php');
+                header('Location: ../../index2.php');
                 exit;
             } else {
                 echo "
@@ -34,7 +34,8 @@
             echo "
                 <script>
                     alert('Email or Password wrong');
-                    window.location.href = '../../Login/Login.php;
+                    window.location.href = '../../Login/Login.php'
+                </script>
             ";
         }
     }
