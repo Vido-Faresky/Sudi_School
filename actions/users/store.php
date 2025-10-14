@@ -8,22 +8,10 @@
 
         if ($password != $passwordConfirmation) {
             echo "
-                    <p id='error' style='color:red; display:none; margin-top:-20px;'>⚠ Password dan Konfirmasi Password tidak sama!</p>
-
-                      const form = document.getElementById('Daff');
-                        const password = document.getElementById('password');
-                        const konfir = document.getElementById('konfir');
-                        const error = document.getElementById('error');
-
-                        form.addEventListener('submit', function(event) {
-                            if (password.value !== konfir.value) {
-                            event.preventDefault();
-                            error.style.display = 'block';
-                            } else {
-                            error.style.display = 'none';
-                            alert('Pendaftaran berhasil!');
-                            }
-                        });
+                <script>
+                    alert('Password and Password Confirmation are not match');
+                    window.location.href = '../../pages/register/index.php';
+                </script>
             ";
             } 
 
