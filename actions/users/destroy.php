@@ -10,7 +10,7 @@
         $stmt->execute();
 
         if($stmt->affected_rows > 0) {
-            header('Location: ../../pages/users/index.php');
+            header('Location: ../../index.php');
             exit;
         } else {
             echo 'Error to delete user: ' . $stmt->error;

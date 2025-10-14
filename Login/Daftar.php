@@ -17,7 +17,7 @@
   </div>
 
   <div class="Daff" id="Daff">
-    <form action="../index.php">
+    <form method="POST" action="../actions/users/store.php">
       <label>Email</label>
       <input type="email" name="username" placeholder="Masukkan Email" required />
 
