@@ -1,16 +1,16 @@
 <?php
-    require_once '../../config/db-connection.php';
+require_once '../../config/db-connection.php';
 
-    $users = [];
+$users = [];
 
-    $query = "SELECT * from users";
+$query = "SELECT * from users";
 
-    $stmt = $connection->prepare($query);
-    $stmt->execute();
+$stmt = $connection->prepare($query);
+$stmt->execute();
 
-    $result = $stmt->get_result();
+$result = $stmt->get_result();
 
-    while ($user = $result->fetch_assoc()) {
-        $users[] = $user;
-    }
+while ($user = $result->fetch_assoc()) {
+    $users[] = $user;
+}
 ?>

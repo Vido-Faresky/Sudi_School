@@ -1,42 +1,42 @@
 <?php
-    require_once '../../config/db-connection.php';
+require_once '../../config/db-connection.php';
 
-    if (isset($_POST['store'])) {
-        $email = htmlspecialchars($_POST['email']);
-        $password = $_POST['password'];
-        $passwordConfirmation = $_POST['confirm'];
+if (isset($_POST['store'])) {
+    $email = htmlspecialchars($_POST['email']);
+    $password = $_POST['password'];
+    $passwordConfirmation = $_POST['confirm'];
 
-         
-        if ($password != $passwordConfirmation) {
-            echo "
+
+    if ($password != $passwordConfirmation) {
+        echo "
                 <script>
                     alert('Password and Password Confirmation are not match');
                     window.location.href = '../../pages/register/index.php';
                 </script>
             ";
+    } else {
+
+        $passwordHashed = password_hash($password, PASSWORD_BCRYPT);
+        $query = "INSERT INTO users (email, password) VALUES (?, ?)";
+
+        $stmt = $connection->prepare($query);
+        $stmt->bind_param('ss', $email, $passwordHashed);
+        $stmt->execute();
+
+        if ($stmt->affected_rows > 0) {
+            $stmt->close();
+            header('Location: ../../index2.php');
+            exit();
         } else {
-        
-            $passwordHashed = password_hash($password, PASSWORD_BCRYPT);
-            $query = "INSERT INTO users (email, password) VALUES (?, ?)";
-
-            $stmt = $connection->prepare($query);
-            $stmt->bind_param('ss',$email, $passwordHashed);
-            $stmt->execute();
-
-            if ($stmt->affected_rows > 0) {
-                $stmt->close();
-                header('Location: ../../index2.php');
-                exit();
-            } else {
-                echo "
+            echo "
                     <script>
                         alert('Error to register new user');
                     </script> 
                 ";
 
-                header('Location: ../../Login/Daftar.php');
-                exit;
-            }
+            header('Location: ../../Login/Daftar.php');
+            exit;
         }
     }
+}
 ?>
