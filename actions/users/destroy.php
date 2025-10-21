@@ -10,7 +10,7 @@ if (isset($_POST['destroy'])) {
     $stmt->execute();
 
     if ($stmt->affected_rows > 0) {
-        header('Location: ../../index.php');
+        header('Location: ../../landing/index.php');
         exit;
     } else {
         echo 'Error to delete user: ' . $stmt->error;

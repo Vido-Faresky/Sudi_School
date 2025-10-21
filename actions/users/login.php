@@ -20,7 +20,7 @@ if (isset($_POST['login'])) {
         if ($isPasswordMatch) {
             session_regenerate_id(true);
             $_SESSION['user'] = $user;
-            header('Location: ../../index2.php');
+            header('Location: ../../landing/index2.php');
             exit;
         } else {
             echo "

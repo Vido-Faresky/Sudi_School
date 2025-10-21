@@ -1,3 +1,6 @@
+<
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,6 +28,38 @@
             <img src="../Foto/TLJ.png">
         </div>
 
+<table class="produk-table">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Nama Pelajaran</th>
+                        <th>Keterangan</th>
+                        <th>Tenggat Waktu</th>
+                        <th>Kategori</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($products as $index => $product): ?>
+                        <tr>
+                            <td>
+                                <?= $index + 1 ?>
+                            </td>
+                            <td>
+                                <?= $product['name'] ?>
+                            </td>
+                            <td>
+                                <?= $product['description'] ?>
+                            </td>
+                            <td>
+                                <?= $product['due_date'] ?>
+                            </td>
+                            <td>
+                                <?= $product['category'] ?>
+                            </td>
+                        </tr>
+                    <?php endforeach ?>
+                </tbody>
+            </table>
 
 
         <p style="font-size: 20px;">Pilihan Lainnya</p>

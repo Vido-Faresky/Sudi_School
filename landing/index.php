@@ -18,9 +18,8 @@
                 <img style="width: 40px; margin-top: 2px;" src="../Foto/Search.png" alt="Search">
             </button>
             <div class="Masukk">
-                <a class="Masuk" style="margin-left: 1600px;"
-                    onclick="return confirm('Are you sure to logout from this app?')"
-                    href="actions/users/logout.php">Logout</a>
+                <a class="Masuk" href="../Login/Login.php">Login</a>
+                <a class="Masuk" style="margin-left: 1600px;" href="../Login/Daftar.php">Register</a>
             </div>
         </header>
     </div>
