@@ -1,3 +1,11 @@
+<?php
+require_once '../actions/assignments/get-assignments.php';
+require_once '../actions/assignments/lesson-name.php';
+
+$query = "SELECT * from assignments WHERE subject_id=";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
