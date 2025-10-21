@@ -46,28 +46,28 @@ $user = $_SESSION['user'];
     </div>
 
     <div class="MoB1">
-        <a href="../Deskripsi/TLJ.php">
+        <a href="../Deskripsi/TLJ.php?subject_id=1">
             <div class="MOB">
                 <img class="FMOB" src="../Foto/TLJ.png">
                 <div class="PMOB">
                 </div>
             </div>
         </a>
-        <a href="../Deskripsi/PPL.php">
+        <a href="../Deskripsi/PPL.php?subject_id=2">
             <div class="MOB">
                 <img class="FMOB" src="../Foto/PPL.png">
                 <div class="PMOB">
                 </div>
             </div>
         </a>
-        <a href="../Deskripsi/ING.php">
+        <a href="../Deskripsi/ING.php?subject_id=3">
             <div class="MOB">
                 <img class="FMOB" src="../Foto/ING.png">
                 <div class="PMOB">
                 </div>
             </div>
         </a>
-        <a href="../Deskripsi/PP.php">
+        <a href="../Deskripsi/PP.php?subject_id=4">
             <div class="MOB">
                 <img class="FMOB" src="../Foto/PP.png">
                 <div class="PMOB">
@@ -77,27 +77,27 @@ $user = $_SESSION['user'];
     </div>
 
     <div class="MoB1">
-        <a href="../Deskripsi/DAMI.php">
+        <a href="../Deskripsi/DAMI.php?subject_id=5">
             <div class="MOB">
                 <img class="FMOB" src="../Foto/DAMI.png">
                 <div class="PMOB">
                 </div>
             </div>
         </a>
-        <a href="../Deskripsi/PDL.php">
+        <a href="../Deskripsi/PDL.php?subject_id=6">
             <div class="MOB">
                 <img class="FMOB" src="../Foto/PDL.png">
                 <div class="PMOB">
                 </div>
             </div>
-            <a href="../Deskripsi/AGM.php">
+            <a href="../Deskripsi/AGM.php?subject_id=7">
                 <div class="MOB">
                     <img class="FMOB" src="../Foto/AGM.png">
                     <div class="PMOB">
                     </div>
                 </div>
             </a>
-            <a href="../Deskripsi/BI.php">
+            <a href="../Deskripsi/BI.php?subject_id=8">
                 <div class="MOB">
                     <img class="FMOB" src="../Foto/BI.png">
                     <div class="PMOB">
@@ -107,28 +107,28 @@ $user = $_SESSION['user'];
     </div>
 
     <div class="MoB1">
-        <a href="../Deskripsi/MTK.php">
+        <a href="../Deskripsi/MTK.php?subject_id=14">
             <div class="MOB">
                 <img class="FMOB" src="../Foto/MTK.png">
                 <div class="PMOB">
                 </div>
             </div>
         </a>
-        <a href="../Deskripsi/PWL.php">
+        <a href="../Deskripsi/PWL.php?subject_id=9">
             <div class="MOB">
                 <img class="FMOB" src="../Foto/PWL.png">
                 <div class="PMOB">
                 </div>
             </div>
         </a>
-        <a href="../Deskripsi/PJOK.php">
+        <a href="../Deskripsi/PJOK.php?subject_id=10">
             <div class="MOB">
                 <img class="FMOB" src="../Foto/PJOK.png">
                 <div class="PMOB">
                 </div>
             </div>
         </a>
-        <a href="../Deskripsi/PKdK.php">
+        <a href="../Deskripsi/PKdK.php?subject_id=11">
             <div class="MOB">
                 <img class="FMOB" src="../Foto/PKdK.png">
                 <div class="PMOB">
@@ -138,14 +138,14 @@ $user = $_SESSION['user'];
     </div>
 
     <div class="MoB1">
-        <a href="../Deskripsi/SJRH.php">
+        <a href="../Deskripsi/SJRH.php?subject_id=12">
             <div class="MOB">
                 <img class="FMOB" src="../Foto/SJRH.png">
                 <div class="PMOB">
                 </div>
             </div>
         </a>
-        <a href="../Deskripsi/MAN.php">
+        <a href="../Deskripsi/MAN.php?subject_id=13">
             <div class="MOB">
                 <img class="FMOB" src="../Foto/MAN.png">
                 <div class="PMOB">

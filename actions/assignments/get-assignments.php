@@ -1,27 +1,21 @@
 <?php
-require_once '../../config/db-connection.php';
+require_once '../config/db-connection.php';
+require_once 'lesson-name.php';
 
-function getAssignments($payload)
-{
-    global $connection;
+$query = "SELECT * from assignments WHERE subject_id = ?";
 
-    $products = [];
+$assignments = [];
 
-    // $keyword = isset($payload['keyword']) ? $payload['keyword'] : "";
-    // $search = "%keyword%";
+$subjectid = $_GET['subject_id'];
 
-    $query = "SELECT name, description, due_date, category FROM assignment";
+$stmt = $connection->prepare($query);
+$stmt->bind_param('i', $subjectid);
+$stmt->execute();
 
-    $stmt = $connection->prepare($query);
-    $stmt->bind_param('sii', $search, $limit, $offset);
-    $stmt->execute();
+$result = $stmt->get_result();
 
-    $result = $stmt->get_result();
-
-    while ($product = $result->fetch_assoc()) {
-        $products[] = $product;
-    }
-
-    return $products;
+while ($assignment = $result->fetch_assoc()) {
+    $assignments[] = $assignment;
 }
+
 ?>

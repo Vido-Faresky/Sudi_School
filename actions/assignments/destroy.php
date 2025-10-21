@@ -1,12 +1,12 @@
 <?php
 require_once '../../config/db-connection.php';
 if (isset($_POST['destroy'])) {
-    $query = "DELETE FROM users WHERE id = ?";
+    $query = "DELETE FROM assignments WHERE id = ?";
 
-    $userid = $_GET['id'];
+    $assignmentid = $_GET['id'];
 
     $stmt = $connection->prepare($query);
-    $stmt->bind_param('i', $userid);
+    $stmt->bind_param('i', $assignmentid);
     $stmt->execute();
 
     if ($stmt->affected_rows > 0) {

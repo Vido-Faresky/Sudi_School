@@ -1,4 +1,12 @@
-<
+<?php
+require_once '../actions/assignments/get-assignments.php';
+require_once '../actions/assignments/lesson-name.php';
+
+$query = "SELECT * from assignments WHERE subject_id=";
+
+?>
+
+
 
 
 <!DOCTYPE html>
@@ -28,104 +36,119 @@
             <img src="../Foto/TLJ.png">
         </div>
 
-<table class="produk-table">
+        <div class="table-container">
+            <table>
                 <thead>
                     <tr>
-                        <th>No.</th>
+                        <th>No</th>
                         <th>Nama Pelajaran</th>
                         <th>Keterangan</th>
                         <th>Tenggat Waktu</th>
                         <th>Kategori</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($products as $index => $product): ?>
+
+
+                    <?php foreach ($assignments as $index => $assignment): ?>
                         <tr>
                             <td>
                                 <?= $index + 1 ?>
                             </td>
                             <td>
-                                <?= $product['name'] ?>
+                                <?= $subjects[$assignment['subject_id']] ?>
                             </td>
                             <td>
-                                <?= $product['description'] ?>
+                                <?= $assignment['description'] ?>
                             </td>
                             <td>
-                                <?= $product['due_date'] ?>
+                                <?= $assignment['due_date'] ?>
                             </td>
                             <td>
-                                <?= $product['category'] ?>
+                                <?= $categories[$assignment['category_id']] ?>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-edit">Edit</a>
+
+                                <form method="post" action="../actions/assignments/destroy.php?id=<?= $assignment['id'] ?>">
+                                    <button name="destroy" onclick="return confirm('Are you sure to delete this user?')"
+                                        type="submit" class="btn btn-delete">Delete</button>
+                                </form>
                             </td>
                         </tr>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
+        </div>
+
+        <a href="#" class="btnn btn-edit">Add</a>
 
 
         <p style="font-size: 20px;">Pilihan Lainnya</p>
 
         <div class="Lainnya">
-            <a style="text-decoration: none; color: black;" href="PPL.php">
+            <a style="text-decoration: none; color: black;" href="PPL.php?subject_id=2">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/PPL.png">
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="ING.php">
+            <a style="text-decoration: none; color: black;" href="ING.php?subject_id=3">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/ING.png">
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="PP.php">
+            <a style="text-decoration: none; color: black;" href="PP.php?subject_id=4">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/PP.png">
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="DAMI.php">
+            <a style="text-decoration: none; color: black;" href="DAMI.php?subject_id=5">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/DAMI.png">
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="PDL.php">
+            <a style="text-decoration: none; color: black;" href="PDL.php?subject_id=6">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/PDL.png">
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="AGM.php">
+            <a style="text-decoration: none; color: black;" href="AGM.php?subject_id=7">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/AGM.png">
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="BI.php">
+            <a style="text-decoration: none; color: black;" href="BI.php?subject_id=8">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/BI.png">
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="MTK.php">
+            <a style="text-decoration: none; color: black;" href="MTK.php?subject_id=14">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/MTK.png">
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="PWL.php">
+            <a style="text-decoration: none; color: black;" href="PWL.php?subject_id=9">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/PWL.png">
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="PJOK.php">
+            <a style="text-decoration: none; color: black;" href="PJOK.php?subject_id=10">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/PJOK.png">
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="PKdK.php">
+            <a style="text-decoration: none; color: black;" href="PKdK.php?subject_id=11">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/PKDK.png">
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="SJRH.php">
+            <a style="text-decoration: none; color: black;" href="SJRH.php?subject_id=12">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/SJRH.png">
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="MAN.php">
+            <a style="text-decoration: none; color: black;" href="MAN.php?subject_id=13">
                 <div class="LainB" style="height: 270px;">
                     <img class="Fott" src="../Foto/MAN.png">
                 </div>
