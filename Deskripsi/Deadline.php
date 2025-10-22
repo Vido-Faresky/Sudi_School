@@ -42,7 +42,7 @@ $query = "SELECT * from assignments WHERE subject_id=";
                         <th>Keterangan</th>
                         <th>Tenggat Waktu</th>
                         <th>Kategori</th>
-                        <th>Aksi</th>
+                        <th>Pengaturan</th>
                     </tr>
                 </thead>
                 <tbody>

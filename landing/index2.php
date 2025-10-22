@@ -32,7 +32,7 @@ $user = $_SESSION['user'];
             <div class="Masukk">
                 <a class="Masuk" style="margin-left: 1600px;"
                     onclick="return confirm('Are you sure to logout from this app?')"
-                    href="actions/users/logout.php">Logout</a>
+                    href="../actions/users/logout.php">Logout</a>
             </div>
         </header>
     </div>
