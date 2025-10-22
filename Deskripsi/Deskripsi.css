@@ -90,8 +90,8 @@ table {
 }
 
 table thead {
-  background: #007bff;
-  color: white;
+  background: #ffddec;
+  color: black;
 }
 
 table th,
@@ -106,7 +106,8 @@ table tr:nth-child(even) {
 }
 
 table tr:hover {
-  background: #eef4ff;
+  transition: 0.3s;
+  background: #fff1f4;
 }
 
 .btn {
@@ -129,7 +130,7 @@ table tr:hover {
 }
 
 .btn-edit {
-  background: #ffc107;
+  background: #ffddec;
   color: #000;
   border: #000;
 }
