@@ -62,12 +62,15 @@ require_once '../actions/assignments/deadline.php';
                                 <?= $categories[$assignment['category_id']] ?>
                             </td>
                             <td>
-                                <a href="#" class="btn btn-edit">Edit</a>
+                                <div class="btnnn">
+                                    <a href="#" class="btn btn-edit">Edit</a>
 
-                                <form method="post" action="../actions/assignments/destroy.php?id=<?= $assignment['id'] ?>">
-                                    <button name="destroy" onclick="return confirm('Are you sure to delete this user?')"
-                                        type="submit" class="btn btn-delete">Delete</button>
-                                </form>
+                                    <form method="post"
+                                        action="../actions/assignments/destroy.php?id=<?= $assignment['id'] ?>">
+                                        <button name="destroy" onclick="return confirm('Are you sure to delete this user?')"
+                                            type="submit" class="btn btn-delete">Delete</button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -77,13 +80,13 @@ require_once '../actions/assignments/deadline.php';
 
         <a href="#" class="btnn btn-edit">Add</a>
 
-    <footer class="Footer">
-        <h2>Kelompok 1 Terkeren :</h2>
-        <ul>Charles</ul>
-        <ul>Michael Robert Yandi</ul>
-        <ul>Ryo Marvel</ul>
-        <ul>Vido Faresky</ul>
-    </footer>
+        <footer class="Footer">
+            <h2>Kelompok 1 Terkeren :</h2>
+            <ul>Charles</ul>
+            <ul>Michael Robert Yandi</ul>
+            <ul>Ryo Marvel</ul>
+            <ul>Vido Faresky</ul>
+        </footer>
 </body>
 
 </html>
