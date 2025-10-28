@@ -1,5 +1,14 @@
 <?php
 require_once '../../config/db-connection.php';
+
+// date_default_timezone_set('Asia/Pontianak');
+
+// $today = date('Y-m-d');
+// $deleteOld = "DELETE FROM assignments WHERE due_date < ?";
+// $stmt = $connection->prepare($deleteOld);
+// $stmt->bind_param('s', $today);
+// $stmt->execute();
+
 if (isset($_POST['destroy'])) {
     $query = "DELETE FROM assignments WHERE id = ?";
 

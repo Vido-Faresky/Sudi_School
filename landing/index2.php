@@ -1,4 +1,7 @@
 <?php
+require_once '../actions/assignments/get-assignments.php';
+require_once '../actions/assignments/lesson-name.php';
+
 session_start();
 
 if (!isset($_SESSION['user'])) {
@@ -8,6 +11,8 @@ if (!isset($_SESSION['user'])) {
 
 $user = $_SESSION['user'];
 
+$query = "SELECT * from assignments WHERE subject_id=";
+
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +21,7 @@ $user = $_SESSION['user'];
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="Homepage.css">
+    <link rel="stylesheet" type="text/css" href="Deskripsi.css">
     <title>Homepage Utama</title>
     <link rel="icon" href="../Foto/Logo Sudi School.png" type="png">
 </head>
@@ -41,118 +47,78 @@ $user = $_SESSION['user'];
         <img class="Slide" src="../Foto/SlideShow.png">
     </div>
 
-    <div class="Mobil">
-        <h1 class="Mobill">Pelajaran</h1>
+    <p class="label">Pelajaran</p>
+
+    <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(event)"><?= $label ?></button>
+        <div id="dropdownMenu" class="dropdown-content">
+            <a href="index2.php">Semua</a>
+            <a href="index2.php?subject_id=1">TLJ</a>
+            <a href="index2.php?subject_id=2">PPL</a>
+            <a href="index2.php?subject_id=3">ING</a>
+            <a href="index2.php?subject_id=4">PP</a>
+            <a href="index2.php?subject_id=5">DAMI</a>
+            <a href="index2.php?subject_id=6">PDL</a>
+            <a href="index2.php?subject_id=7">Agama</a>
+            <a href="index2.php?subject_id=8">BI</a>
+            <a href="index2.php?subject_id=9">PWL</a>
+            <a href="index2.php?subject_id=10">PJOK</a>
+            <a href="index2.php?subject_id=11">PKdK</a>
+            <a href="index2.php?subject_id=12">Sejarah</a>
+            <a href="index2.php?subject_id=13">MAN</a>
+            <a href="index2.php?subject_id=14">MTK</a>
+        </div>
     </div>
 
-    <div class="MoB1">
-        <a href="../Deskripsi/TLJ.php?subject_id=1">
-            <div class="MOB">
-                <img class="FMOB" src="../Foto/TLJ.png">
-                <div class="PMOB">
-                </div>
-            </div>
-        </a>
-        <a href="../Deskripsi/PPL.php?subject_id=2">
-            <div class="MOB">
-                <img class="FMOB" src="../Foto/PPL.png">
-                <div class="PMOB">
-                </div>
-            </div>
-        </a>
-        <a href="../Deskripsi/ING.php?subject_id=3">
-            <div class="MOB">
-                <img class="FMOB" src="../Foto/ING.png">
-                <div class="PMOB">
-                </div>
-            </div>
-        </a>
-        <a href="../Deskripsi/PP.php?subject_id=4">
-            <div class="MOB">
-                <img class="FMOB" src="../Foto/PP.png">
-                <div class="PMOB">
-                </div>
-            </div>
-        </a>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Pelajaran</th>
+                    <th>Keterangan</th>
+                    <th>Tenggat Waktu</th>
+                    <th>Kategori</th>
+                    <th>Pengaturan</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+                <?php foreach ($assignments as $index => $assignment): ?>
+                    <tr>
+                        <td>
+                            <?= $index + 1 ?>
+                        </td>
+                        <td>
+                            <?= $subjects[$assignment['subject_id']] ?>
+                        </td>
+                        <td>
+                            <?= $assignment['description'] ?>
+                        </td>
+                        <td>
+                            <?= $assignment['due_date'] ?>
+                        </td>
+                        <td>
+                            <?= $categories[$assignment['category_id']] ?>
+                        </td>
+                        <td>
+                            <div class="btnnn">
+                                <a href="#" class="btn btn-edit">Edit</a>
+
+                                <form method="post" action="../actions/assignments/destroy.php?id=<?= $assignment['id'] ?>">
+                                    <button name="destroy" onclick="return confirm('Are you sure to delete this user?')"
+                                        type="submit" class="btn btn-delete">Delete</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
     </div>
 
-    <div class="MoB1">
-        <a href="../Deskripsi/DAMI.php?subject_id=5">
-            <div class="MOB">
-                <img class="FMOB" src="../Foto/DAMI.png">
-                <div class="PMOB">
-                </div>
-            </div>
-        </a>
-        <a href="../Deskripsi/PDL.php?subject_id=6">
-            <div class="MOB">
-                <img class="FMOB" src="../Foto/PDL.png">
-                <div class="PMOB">
-                </div>
-            </div>
-            <a href="../Deskripsi/AGM.php?subject_id=7">
-                <div class="MOB">
-                    <img class="FMOB" src="../Foto/AGM.png">
-                    <div class="PMOB">
-                    </div>
-                </div>
-            </a>
-            <a href="../Deskripsi/BI.php?subject_id=8">
-                <div class="MOB">
-                    <img class="FMOB" src="../Foto/BI.png">
-                    <div class="PMOB">
-                    </div>
-                </div>
-            </a>
-    </div>
-
-    <div class="MoB1">
-        <a href="../Deskripsi/MTK.php?subject_id=14">
-            <div class="MOB">
-                <img class="FMOB" src="../Foto/MTK.png">
-                <div class="PMOB">
-                </div>
-            </div>
-        </a>
-        <a href="../Deskripsi/PWL.php?subject_id=9">
-            <div class="MOB">
-                <img class="FMOB" src="../Foto/PWL.png">
-                <div class="PMOB">
-                </div>
-            </div>
-        </a>
-        <a href="../Deskripsi/PJOK.php?subject_id=10">
-            <div class="MOB">
-                <img class="FMOB" src="../Foto/PJOK.png">
-                <div class="PMOB">
-                </div>
-            </div>
-        </a>
-        <a href="../Deskripsi/PKdK.php?subject_id=11">
-            <div class="MOB">
-                <img class="FMOB" src="../Foto/PKdK.png">
-                <div class="PMOB">
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <div class="MoB1">
-        <a href="../Deskripsi/SJRH.php?subject_id=12">
-            <div class="MOB">
-                <img class="FMOB" src="../Foto/SJRH.png">
-                <div class="PMOB">
-                </div>
-            </div>
-        </a>
-        <a href="../Deskripsi/MAN.php?subject_id=13">
-            <div class="MOB">
-                <img class="FMOB" src="../Foto/MAN.png">
-                <div class="PMOB">
-                </div>
-            </div>
-        </a>
-    </div>
+    <a href="#" class="btnn btn-edit">Add</a>
 
     <footer class="Footer">
         <h2>Kelompok 1 Terkeren :</h2>
