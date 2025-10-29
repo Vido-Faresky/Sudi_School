@@ -4,7 +4,14 @@ require_once 'lesson-name.php';
 
 $assignments = [];
 
+
 $label = "Semua";
+
+isset($_GET['name']);
+$lesson = $_GET['name'];
+$subjects = "SELECT * FROM assignments INNER JOIN subjects on subjects.id = assignments.subject_id WHERE name = ?";
+$stmtt = $connection->prepare($subjects);
+$stmtt->bind_param('i', $lesson);
 
 if (isset($_GET['subject_id']) && !empty($_GET['subject_id'])) {
     $subjectid = $_GET['subject_id'];

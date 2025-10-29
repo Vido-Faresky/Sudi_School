@@ -11,8 +11,6 @@ if (!isset($_SESSION['user'])) {
 
 $user = $_SESSION['user'];
 
-$query = "SELECT * from assignments WHERE subject_id=";
-
 ?>
 
 <!DOCTYPE html>
@@ -91,7 +89,7 @@ $query = "SELECT * from assignments WHERE subject_id=";
                             <?= $index + 1 ?>
                         </td>
                         <td>
-                            <?= $subjects[$assignment['subject_id']] ?>
+                            <?= $lesson ?>
                         </td>
                         <td>
                             <?= $assignment['description'] ?>
