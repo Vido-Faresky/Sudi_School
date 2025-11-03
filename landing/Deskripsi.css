@@ -126,11 +126,12 @@ table tr:hover {
 .dropdown-button {
   background-color: #ffddec;
   color: black;
-  padding: 10px 100px;
+  padding: 10px 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: 0.3s ease;
+  font-size: 20px;
 }
 
 .dropdown-button:hover {
@@ -190,6 +191,14 @@ table tr:hover {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.top-bar {
+  position: relative;
+}
+
+.top-bar.btnn {
+  margin-top: -200px;
 }
 
 .btn-edit {

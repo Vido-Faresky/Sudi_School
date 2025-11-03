@@ -2,7 +2,16 @@
 require_once '../actions/assignments/get-assignments.php';
 require_once '../actions/assignments/lesson-name.php';
 
-$query = "SELECT * from assignments WHERE subject_id=";
+
+$querySubjects = "SELECT id, name FROM subjects";
+$resultSubjects = $connection->query($querySubjects);
+
+$subjects = [];
+if ($resultSubjects && $resultSubjects->num_rows > 0) {
+    while ($row = $resultSubjects->fetch_assoc()) {
+        $subjects[$row['id']] = $row['name'];
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -39,25 +48,19 @@ $query = "SELECT * from assignments WHERE subject_id=";
     <p class="label">Pelajaran</p>
 
     <div class="dropdown">
-        <button class="dropdown-button" onclick="toggleDropdown(event)"><?= $label ?></button>
-        <div id="dropdownMenu" class="dropdown-content">
-            <a href="../Login/Login.php">Semua</a>
-            <a href="../Login/Login.php">TLJ</a>
-            <a href="../Login/Login.php">PPL</a>
-            <a href="../Login/Login.php">ING</a>
-            <a href="../Login/Login.php">PP</a>
-            <a href="../Login/Login.php">DAMI</a>
-            <a href="../Login/Login.php">PDL</a>
-            <a href="../Login/Login.php">Agama</a>
-            <a href="../Login/Login.php">BI</a>
-            <a href="../Login/Login.php">PWL</a>
-            <a href="../Login/Login.php">PJOK</a>
-            <a href="../Login/Login.php">PKdK</a>
-            <a href="../Login/Login.php">Sejarah</a>
-            <a href="../Login/Login.php">MAN</a>
-            <a href="../Login/Login.php">MTK</a>
+        <button class="dropdown-button" onclick="toggleDropdown(event)">
+            <?= $label ?>
+            <img style="width: 20px; margin-left: 120px;" src="../Foto/Dropdown.png" alt="arrow" class="arrow-icon">
+        </button>
+        <div id="dropdownMenu" style="display: none;" class="dropdown-content">
+            <a href="index2.php">Semua</a>
+            <?php foreach ($subjects as $id => $name): ?>
+                <a href="../Login/Login.php"><?= htmlspecialchars($name) ?></a>
+            <?php endforeach; ?>
         </div>
     </div>
+
+    <a href="#" class="btnn btn-edit">Add</a>
 
     <div class="table-container">
         <table>
@@ -107,7 +110,7 @@ $query = "SELECT * from assignments WHERE subject_id=";
         </table>
     </div>
 
-    <a href="#" class="btnn btn-edit">Add</a>
+
 
     <footer class="Footer">
         <h2>Kelompok 1 Terkeren :</h2>

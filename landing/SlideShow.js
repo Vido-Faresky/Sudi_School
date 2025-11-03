@@ -1,3 +1,4 @@
+//Slide Show
 window.onload = function () {
   const slideS = document.querySelector(".SlideS");
   const slides = document.querySelectorAll(".Slide");
@@ -32,18 +33,32 @@ window.onload = function () {
 };
 3;
 
+//Dropdown
+
 function toggleDropdown(event) {
-  event.stopPropagation();
-  document.getElementById("dropdownMenu").classList.toggle("show");
-}
+  const button = event.currentTarget;
+  const dropdown = button.nextElementSibling;
+  const arrow = button.querySelector(".arrow-icon");
+  const isOpen = dropdown.style.display === "block";
 
-window.addEventListener("beforeunload", function () {
-  localStorage.setItem("scrollPosition", window.scrollY);
-});
+  document.querySelectorAll(".dropdown-content").forEach(d => d.style.display = "none");
+  document.querySelectorAll(".dropdown-button").forEach(b => b.classList.remove("active"));
+  document.querySelectorAll(".arrow-icon").forEach(a => a.src = "../Foto/Dropdown.png");
 
-window.addEventListener("load", function () {
-  const scrollPosition = localStorage.getItem("scrollPosition");
-  if (scrollPosition) {
-    window.scrollTo(0, parseInt(scrollPosition));
+  if (!isOpen) {
+    dropdown.style.display = "block";
+    button.classList.add("active");
+    arrow.src = "../Foto/Dropup.png";
+  } else {
+    arrow.src = "../Foto/Dropdown.png";
   }
-});
+
+  document.addEventListener("click", function closeDropdown(e) {
+    if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+      dropdown.style.display = "none";
+      button.classList.remove("active");
+      arrow.src = "../Foto/Dropdown.png";
+      document.removeEventListener("click", closeDropdown);
+    }
+  });
+}

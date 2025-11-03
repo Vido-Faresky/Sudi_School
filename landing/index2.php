@@ -11,6 +11,7 @@ if (!isset($_SESSION['user'])) {
 
 $user = $_SESSION['user'];
 
+
 ?>
 
 <!DOCTYPE html>
@@ -47,26 +48,21 @@ $user = $_SESSION['user'];
 
     <p class="label">Pelajaran</p>
 
+    <div class="top-bar">
     <div class="dropdown">
-        <button class="dropdown-button" onclick="toggleDropdown(event)"><?= $label ?></button>
-        <div id="dropdownMenu" class="dropdown-content">
+        <button class="dropdown-button" onclick="toggleDropdown(event)">
+            <?= $label ?>
+            <img style="width: 20px; margin-left: 120px;" src="../Foto/Dropdown.png" alt="arrow" class="arrow-icon">
+        </button>
+        <div id="dropdownMenu" style="display: none;" class="dropdown-content">
             <a href="index2.php">Semua</a>
-            <a href="index2.php?subject_id=1">TLJ</a>
-            <a href="index2.php?subject_id=2">PPL</a>
-            <a href="index2.php?subject_id=3">ING</a>
-            <a href="index2.php?subject_id=4">PP</a>
-            <a href="index2.php?subject_id=5">DAMI</a>
-            <a href="index2.php?subject_id=6">PDL</a>
-            <a href="index2.php?subject_id=7">Agama</a>
-            <a href="index2.php?subject_id=8">BI</a>
-            <a href="index2.php?subject_id=9">PWL</a>
-            <a href="index2.php?subject_id=10">PJOK</a>
-            <a href="index2.php?subject_id=11">PKdK</a>
-            <a href="index2.php?subject_id=12">Sejarah</a>
-            <a href="index2.php?subject_id=13">MAN</a>
-            <a href="index2.php?subject_id=14">MTK</a>
+            <?php foreach ($subjects as $id => $name): ?>
+                <a href="index2.php?subject_id=<?= $id ?>"><?= htmlspecialchars($name) ?></a>
+            <?php endforeach; ?>
         </div>
     </div>
+    <a href="#" class="btnn btn-edit">Add</a>
+</div>
 
     <div class="table-container">
         <table>
@@ -89,7 +85,7 @@ $user = $_SESSION['user'];
                             <?= $index + 1 ?>
                         </td>
                         <td>
-                            <?= $lesson ?>
+                            <?= $subjects[$assignment['subject_id']] ?>
                         </td>
                         <td>
                             <?= $assignment['description'] ?>
@@ -116,7 +112,6 @@ $user = $_SESSION['user'];
         </table>
     </div>
 
-    <a href="#" class="btnn btn-edit">Add</a>
 
     <footer class="Footer">
         <h2>Kelompok 1 Terkeren :</h2>
