@@ -61,7 +61,7 @@ $user = $_SESSION['user'];
             <?php endforeach; ?>
         </div>
     </div>
-    <a href="#" class="btnn btn-edit">Add</a>
+    <a href="../Deskripsi/AddPage.php" class="btnn btn-edit">Add</a>
 </div>
 
     <div class="table-container">
@@ -98,7 +98,7 @@ $user = $_SESSION['user'];
                         </td>
                         <td>
                             <div class="btnnn">
-                                <a href="#" class="btn btn-edit">Edit</a>
+                                <a href="../Deskripsi/EditPage.php" class="btn btn-edit">Edit</a>
 
                                 <form method="post" action="../actions/assignments/destroy.php?id=<?= $assignment['id'] ?>">
                                     <button name="destroy" onclick="return confirm('Are you sure to delete this user?')"

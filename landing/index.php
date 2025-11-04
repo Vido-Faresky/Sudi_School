@@ -60,7 +60,7 @@ if ($resultSubjects && $resultSubjects->num_rows > 0) {
         </div>
     </div>
 
-    <a href="#" class="btnn btn-edit">Add</a>
+    <a href="../Login/Login.php" class="btnn btn-edit">Add</a>
 
     <div class="table-container">
         <table>
@@ -96,7 +96,7 @@ if ($resultSubjects && $resultSubjects->num_rows > 0) {
                         </td>
                         <td>
                             <div class="btnnn">
-                                <a href="#" class="btn btn-edit">Edit</a>
+                                <a href="../Login/Login.php" class="btn btn-edit">Edit</a>
 
                                 <form method="post" action="../actions/assignments/destroy.php?id=<?= $assignment['id'] ?>">
                                     <button name="destroy" onclick="return confirm('Are you sure to delete this user?')"

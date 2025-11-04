@@ -4,6 +4,7 @@ require_once 'lesson-name.php';
 
 $assignments = [];
 $subjects = [];
+$categories = [];
 
 $querySubjects = "SELECT * FROM subjects";
 $resultSubjects = $connection->query($querySubjects);
@@ -15,8 +16,19 @@ if ($resultSubjects && $resultSubjects->num_rows > 0) {
     }
 }
 
+$queryCategories = "SELECT * FROM category";
+$resultCategories = $connection->query($queryCategories);
+
+if ($resultCategories && $resultCategories->num_rows > 0) {
+    while ($roww = $resultCategories->fetch_assoc()) {
+        $categories[$roww['id']] = $roww['name'];
+    }
+}
+
 
 $label = "Semua";
+$labels = "Pilih Pelajaran";
+$labelss = "Pilih Kategori";
 
 if (isset($_GET['subject_id']) && !empty($_GET['subject_id'])) {
     $subjectid = $_GET['subject_id'];
@@ -36,6 +48,8 @@ $result = $stmt->get_result();
 while ($assignment = $result->fetch_assoc()) {
     $assignments[] = $assignment;
 }
+
+
 
 
 

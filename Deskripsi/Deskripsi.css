@@ -55,7 +55,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-left: 1500px;
   font-size: 20px;
-  top: 100px;
+  top: 90px;
   transition: 0.3s ease;
 }
 
@@ -72,10 +72,17 @@ body {
   padding-bottom: 100px;
 }
 
+.label {
+  font-size: 40px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
 .table-container {
   width: 100%;
   max-width: 900px;
-  margin: auto;
+  margin: 20px auto;
   background: white;
   padding: 20px;
   border-radius: 12px;
@@ -106,8 +113,57 @@ table tr:nth-child(even) {
 }
 
 table tr:hover {
-  transition: 0.3s;
+  transition: 0.3s ease;
   background: #fff1f4;
+}
+
+.dropdown-button {
+  background-color: #ffddec;
+  color: black;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 20px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-button span {
+  white-space: nowrap;
+}
+
+.dropdown-button:hover {
+  background: #ff8fa3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffe0eb;
+}
+
+.show {
+  display: block;
 }
 
 .btn {
@@ -118,7 +174,7 @@ table tr:hover {
   font-size: 0.9rem;
   transition: 0.3s ease;
   transform: translateY(-2px);
-  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .btnn {
@@ -130,13 +186,21 @@ table tr:hover {
   font-size: 1.1rem;
   transition: 0.3s ease;
   transform: translateY(-2px);
-  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .btnnn {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.top-bar {
+  position: relative;
+}
+
+.top-bar.btnn {
+  margin-top: -200px;
 }
 
 .btn-edit {
@@ -149,11 +213,11 @@ a.btnn.btn-edit {
   display: block;
   width: fit-content;
   margin-top: 40px;
-  margin-left: 100px;
+  margin-left: 1315px;
 }
 
 .btn-edit:hover {
-  background: #FF8FA3;
+  background: #ff8fa3;
 }
 
 .btn-delete {
@@ -182,7 +246,7 @@ a.btnn.btn-edit {
   border-radius: 6px;
   text-decoration: none;
   font-size: 0.9rem;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
 
 .btn-delet {
@@ -207,7 +271,7 @@ a.btnn.btn-edit {
 
 .Fotoo {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 150px;
 }
 
 .Fotoo img {
@@ -323,11 +387,90 @@ a.btnn.btn-edit {
   text-align: center;
 }
 
-p {
-  text-align: center;
-}
-
 .SS {
   border-radius: 8px;
   width: 1000px;
+}
+
+.Daff {
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.Daff form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pwc {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 500px;
+  gap: 15px;
+}
+
+#password {
+  width: 100%;
+  height: 170px;
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+#konfir {
+  height: 35px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.matapw {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.Mata {
+  width: 40px;
+  margin-top: 12px;
+  margin-right: -2px;
+}
+
+.Ingat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.Daftar {
+  width: 100%;
+  background-color: #ffddec;
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
