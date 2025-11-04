@@ -20,7 +20,7 @@ require_once '../actions/assignments/lesson-name.php';
 
   <div class="Header">
     <header>
-      <a href="index.php"><img style="width: 130px; margin-left: 130px;" src="../Foto/Logo Sudi School.png"
+      <a href="../landing/index2.php"><img style="width: 130px; margin-left: 130px;" src="../Foto/Logo Sudi School.png"
           alt="Logo Sudi School"></a>
       <Input class="Header-Input" type="textt" placeholder="Temukan Pelajaran, Tugas, Ulangan..."></Input>
       <button class="Header-Search">
