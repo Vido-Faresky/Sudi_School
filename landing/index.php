@@ -21,7 +21,7 @@ if ($resultSubjects && $resultSubjects->num_rows > 0) {
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="Homepage.css">
     <link rel="stylesheet" type="text/css" href="Deskripsi.css">
-    <title>Homepage Utama</title>
+    <title>Homepage</title>
     <link rel="icon" href="../Foto/Logo Sudi School.png" type="png">
 </head>
 

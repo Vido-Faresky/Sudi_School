@@ -10,7 +10,7 @@ require_once '../actions/assignments/lesson-name.php';
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Halaman Login</title>
+  <title>Tambahkan Tugas</title>
   <link rel="icon" href="../Foto/Logo Sudi School.png" type="png">
   <link rel="stylesheet" type="text/css" href="Homepage.css">
   <link rel="stylesheet" type="text/css" href="Deskripsi.css">

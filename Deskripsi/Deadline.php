@@ -8,7 +8,7 @@ require_once '../actions/assignments/deadline.php';
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="Deskripsi.css">
-    <title>Agama</title>
+    <title>Deadline Terdekat</title>
     <link rel="icon" href="../Foto/Logo Sudi School.png" type="png">
 </head>
 
@@ -17,7 +17,7 @@ require_once '../actions/assignments/deadline.php';
         <header>
             <a href="../index.php"><img style="width: 130px; margin-left: 130px;" src="../Foto/Logo Sudi School.png"
                     alt="Logo Sudi School"></a>
-            <Input class="Header-Input" type="text" placeholder="Temukan Pelajaran, Tugas, Ulangan..."></Input>
+            <Input class="Header-Input" type="textt" placeholder="Temukan Pelajaran, Tugas, Ulangan..."></Input>
             <button class="Header-Search">
                 <img style="width: 40px; margin-top: 2px;" src="../Foto/Search.png" alt="Search">
             </button>
