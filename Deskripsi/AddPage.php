@@ -1,5 +1,5 @@
 <?php
-require_once '../actions/assignments/get-assignments.php';
+require_once '../actions/assignments/add-assignments.php';
 require_once '../actions/assignments/lesson-name.php';
 
 ?>
@@ -36,17 +36,17 @@ require_once '../actions/assignments/lesson-name.php';
   <p class="label">Tambahkan Tugas</p>
 
   <div class="Daff" id="Daff">
-    
-    <form method="POST" action="#" onsubmit="return validateForm()">
+
+    <form method="POST" action="../actions/assignments/add-assignments.php" onsubmit="return validateForm()">
 
       <div class="dropdown">
-        <button type="button" class="dropdown-button" onclick="toggleDropdown(event)">
+        <button name="subject" type="button" class="dropdown-button" onclick="toggleDropdown(event)">
           <span id="dropdownLabels"><?= $labels ?? 'Pilih Pelajaran' ?></span>
           <img style="width: 20px;" src="../Foto/Dropdown.png" alt="arrow" class="arrow-icon">
         </button>
         <div id="dropdownMenuu" style="display: none;" class="dropdown-content">
           <?php foreach ($subjects as $id => $name): ?>
-            <a href="javascript:void(0)" onclick="selectSubject('<?= htmlspecialchars($name) ?>', event)">
+            <a href="javascript:void(0)" onclick="selectSubject('<?= htmlspecialchars($name) ?>', <?= $id ?>, event)">
               <?= htmlspecialchars($name) ?>
             </a>
           <?php endforeach; ?>
@@ -57,22 +57,22 @@ require_once '../actions/assignments/lesson-name.php';
 
       <div class="pwc">
         <label>Keterangan</label>
-        <textarea id="password" type="text" name="password" placeholder="Keterangan Tugas" required></textarea>
+        <textarea id="password" type="text" name="description" placeholder="Keterangan Tugas" required></textarea>
       </div>
 
       <div class="pwc">
         <label>Deadline</label>
-        <input id="konfir" type="date" name="confirm" placeholder="Masukkan Password" required />
+        <input id="konfir" type="date" name="due_date" placeholder="Masukkan Password" required />
       </div>
 
       <div class="dropdown">
-        <button type="button" class="dropdown-button" onclick="toggleDropdown(event)">
+        <button name="category" type="button" class="dropdown-button" onclick="toggleDropdown(event)">
           <span id="dropdownLabel"><?= $labelss ?? 'Pilih Category' ?></span>
           <img style="width: 20px;" src="../Foto/Dropdown.png" alt="arrow" class="arrow-icon">
         </button>
         <div id="dropdownMenu" style="display: none;" class="dropdown-content">
           <?php foreach ($categories as $id => $name): ?>
-            <a href="javascript:void(0)" onclick="selectCategory('<?= htmlspecialchars($name) ?>', event)">
+            <a href="javascript:void(0)" onclick="selectCategory('<?= htmlspecialchars($name) ?>', <?= $id ?>, event)">
               <?= htmlspecialchars($name) ?>
             </a>
           <?php endforeach; ?>
@@ -81,7 +81,7 @@ require_once '../actions/assignments/lesson-name.php';
 
       <input type="hidden" id="categoryInput" name="category">
 
-      <button type="submit"  name="store" class="Daftar">Tambahkan</button>
+      <button type="submit" name="add" class="Daftar">Tambahkan</button>
     </form>
 
   </div>

@@ -25,7 +25,7 @@ if (isset($_POST['store'])) {
 
         if ($stmt->affected_rows > 0) {
             $stmt->close();
-            header('Location: ../../index2.php');
+            header('Location: ../../landing/index2.php');
             exit();
         } else {
             echo "

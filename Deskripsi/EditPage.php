@@ -1,6 +1,23 @@
 <?php
-require_once '../actions/assignments/get-assignments.php';
+require_once '../actions/assignments/edit-assignments.php';
 require_once '../actions/assignments/lesson-name.php';
+
+$subjects = [];
+$categories = [];
+
+$subRes = $connection->query("SELECT id, name FROM subjects");
+while ($row = $subRes->fetch_assoc()) {
+  $subjects[$row['id']] = $row['name'];
+}
+
+$catRes = $connection->query("SELECT id, name FROM category");
+while ($row = $catRes->fetch_assoc()) {
+  $categories[$row['id']] = $row['name'];
+}
+
+$id = $_GET['id'] ?? 0;
+$result = $connection->query("SELECT * FROM assignments WHERE id = $id");
+$assignment = $result->fetch_assoc();
 
 ?>
 
@@ -10,7 +27,7 @@ require_once '../actions/assignments/lesson-name.php';
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Halaman Login</title>
+  <title>Edit Tugas</title>
   <link rel="icon" href="../Foto/Logo Sudi School.png" type="png">
   <link rel="stylesheet" type="text/css" href="Homepage.css">
   <link rel="stylesheet" type="text/css" href="Deskripsi.css">
@@ -36,51 +53,53 @@ require_once '../actions/assignments/lesson-name.php';
   <p class="label">Edit Tugas</p>
 
   <div class="Daff" id="Daff">
-    <form method="POST" action="#" onsubmit="return validateForm()">
+
+    <form method="POST" action="../actions/assignments/edit-assignments.php" onsubmit="return validateForm()">
+      <input type="hidden" name="id" value="<?= $assignment['id'] ?>">
 
       <div class="dropdown">
-        <button type="button" class="dropdown-button" onclick="toggleDropdown(event)">
+        <button name="subject" type="button" class="dropdown-button" onclick="toggleDropdown(event)">
           <span id="dropdownLabels"><?= $labels ?? 'Pilih Pelajaran' ?></span>
           <img style="width: 20px;" src="../Foto/Dropdown.png" alt="arrow" class="arrow-icon">
         </button>
         <div id="dropdownMenuu" style="display: none;" class="dropdown-content">
           <?php foreach ($subjects as $id => $name): ?>
-            <a href="javascript:void(0)" onclick="selectSubject('<?= htmlspecialchars($name) ?>', event)">
+            <a href="javascript:void(0)" onclick="selectSubject('<?= htmlspecialchars($name) ?>', <?= $id ?>, event)">
               <?= htmlspecialchars($name) ?>
             </a>
           <?php endforeach; ?>
         </div>
       </div>
 
-      <input type="hidden" id="subjectInput" name="subject">
+      <input type="hidden" id="subjectInput" name="subject" value="<?= $assignment['subject_id'] ?>">
 
       <div class="pwc">
         <label>Keterangan</label>
-        <textarea id="password" type="text" name="password" placeholder="Keterangan Tugas" required></textarea>
+        <textarea id="password" type="text" name="description" placeholder="Keterangan Tugas" required></textarea>
       </div>
 
       <div class="pwc">
         <label>Deadline</label>
-        <input id="konfir" type="date" name="confirm" placeholder="Masukkan Password" required />
+        <input id="konfir" type="date" name="due_date" placeholder="Masukkan Password" required />
       </div>
 
       <div class="dropdown">
-        <button type="button" class="dropdown-button" onclick="toggleDropdown(event)">
+        <button name="category" type="button" class="dropdown-button" onclick="toggleDropdown(event)">
           <span id="dropdownLabel"><?= $labelss ?? 'Pilih Category' ?></span>
           <img style="width: 20px;" src="../Foto/Dropdown.png" alt="arrow" class="arrow-icon">
         </button>
         <div id="dropdownMenu" style="display: none;" class="dropdown-content">
           <?php foreach ($categories as $id => $name): ?>
-            <a href="javascript:void(0)" onclick="selectCategory('<?= htmlspecialchars($name) ?>', event)">
+            <a href="javascript:void(0)" onclick="selectCategory('<?= htmlspecialchars($name) ?>', <?= $id ?>, event)">
               <?= htmlspecialchars($name) ?>
             </a>
           <?php endforeach; ?>
         </div>
       </div>
 
-      <input type="hidden" id="categoryInput" name="category">
+      <input type="hidden" id="categoryInput" name="category" value="<?= $assignment['category_id'] ?>">
 
-      <button type="submit"  name="store" class="Daftar">Edit</button>
+      <button type="submit" name="update" class="Daftar">Update</button>
     </form>
 
   </div>

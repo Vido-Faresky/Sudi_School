@@ -1,5 +1,6 @@
 <?php
 require_once '../actions/assignments/deadline.php';
+// require_once '../actions/assignments/get-assignments.php';
 ?>
 
 <!DOCTYPE html>
@@ -10,6 +11,10 @@ require_once '../actions/assignments/deadline.php';
     <link rel="stylesheet" type="text/css" href="Deskripsi.css">
     <title>Deadline Terdekat</title>
     <link rel="icon" href="../Foto/Logo Sudi School.png" type="png">
+    <div class="Masukk">
+        <a class="Masuk" style="margin-left: 1600px;" onclick="return confirm('Are you sure to logout from this app?')"
+            href="../actions/users/logout.php">Logout</a>
+    </div>
 </head>
 
 <body>
@@ -77,8 +82,6 @@ require_once '../actions/assignments/deadline.php';
                 </tbody>
             </table>
         </div>
-
-        <a href="#" class="btnn btn-edit">Add</a>
 
         <footer class="Footer">
             <h2>Kelompok 1 Terkeren :</h2>

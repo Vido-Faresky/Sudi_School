@@ -120,7 +120,7 @@ if ($resultSubjects && $resultSubjects->num_rows > 0) {
         <ul>Vido Faresky</ul>
     </footer>
 
-    <script src="SlideShow.js"></script>
+    <script src="SlideShow2.js"></script>
 </body>
 
 </html>

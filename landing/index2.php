@@ -11,7 +11,6 @@ if (!isset($_SESSION['user'])) {
 
 $user = $_SESSION['user'];
 
-
 ?>
 
 <!DOCTYPE html>
@@ -49,20 +48,20 @@ $user = $_SESSION['user'];
     <p class="label">Pelajaran</p>
 
     <div class="top-bar">
-    <div class="dropdown">
-        <button class="dropdown-button" onclick="toggleDropdown(event)">
-            <?= $label ?>
-            <img style="width: 20px; margin-left: 120px;" src="../Foto/Dropdown.png" alt="arrow" class="arrow-icon">
-        </button>
-        <div id="dropdownMenu" style="display: none;" class="dropdown-content">
-            <a href="index2.php">Semua</a>
-            <?php foreach ($subjects as $id => $name): ?>
-                <a href="index2.php?subject_id=<?= $id ?>"><?= htmlspecialchars($name) ?></a>
-            <?php endforeach; ?>
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown(event)">
+                <?= $label ?>
+                <img style="width: 20px; margin-left: 120px;" src="../Foto/Dropdown.png" alt="arrow" class="arrow-icon">
+            </button>
+            <div id="dropdownMenu" style="display: none;" class="dropdown-content">
+                <a href="index2.php">Semua</a>
+                <?php foreach ($subjects as $id => $name): ?>
+                    <a href="index2.php?subject_id=<?= $id ?>"><?= htmlspecialchars($name) ?></a>
+                <?php endforeach; ?>
+            </div>
         </div>
+        <a href="../Deskripsi/AddPage.php" class="btnn btn-edit">Add</a>
     </div>
-    <a href="../Deskripsi/AddPage.php" class="btnn btn-edit">Add</a>
-</div>
 
     <div class="table-container">
         <table>
@@ -98,7 +97,8 @@ $user = $_SESSION['user'];
                         </td>
                         <td>
                             <div class="btnnn">
-                                <a href="../Deskripsi/EditPage.php" class="btn btn-edit">Edit</a>
+                                <a href="../Deskripsi/EditPage.php?id=<?= $assignment['id'] ?>"
+                                    class="btn btn-edit">Edit</a>
 
                                 <form method="post" action="../actions/assignments/destroy.php?id=<?= $assignment['id'] ?>">
                                     <button name="destroy" onclick="return confirm('Are you sure to delete this user?')"

@@ -35,7 +35,7 @@ function toggleDropdown(event) {
   });
 }
 
-function selectSubject(name, event) {
+function selectSubject(name, id, event) {
   event.preventDefault();
   event.stopPropagation();
   const link = event.currentTarget;
@@ -45,15 +45,14 @@ function selectSubject(name, event) {
   const arrow = button.querySelector(".arrow-icon");
 
   labels.textContent = name;
-
-  document.getElementById("subjectInput").value = name;
+  document.getElementById("subjectInput").value = id;
 
   dropdown.style.display = "none";
   button.classList.remove("active");
   arrow.src = "../Foto/Dropdown.png";
 }
 
-function selectCategory(name, event) {
+function selectCategory(name, id, event) {
   event.preventDefault();
   event.stopPropagation();
   const link = event.currentTarget;
@@ -63,8 +62,7 @@ function selectCategory(name, event) {
   const arrow = button.querySelector(".arrow-icon");
 
   label.textContent = name;
-
-  document.getElementById("categoryInput").value = name;
+  document.getElementById("categoryInput").value = id;
 
   dropdown.style.display = "none";
   button.classList.remove("active");
