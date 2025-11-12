@@ -75,12 +75,12 @@ $assignment = $result->fetch_assoc();
 
       <div class="pwc">
         <label>Keterangan</label>
-        <textarea id="password" type="text" name="description" placeholder="Keterangan Tugas" required></textarea>
+        <textarea id="password" name="description" placeholder="Keterangan Tugas" required><?= htmlspecialchars($assignment['description']) ?></textarea>
       </div>
 
       <div class="pwc">
         <label>Deadline</label>
-        <input id="konfir" type="date" name="due_date" placeholder="Masukkan Password" required />
+        <input id="konfir" type="date" name="due_date" value="<?= $assignment['due_date'] ?>" required />
       </div>
 
       <div class="dropdown">
