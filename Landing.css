@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}                                                                                                   
+
+.Header {
+    background-color: #ffddec;
+    margin-top: 60px;
+    padding: 6px;
+    margin-bottom: 100px;
+}
+
+.Header-Input {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    margin-left: 390px;
+    margin-top: -65px;
+    border-color: black;
+    width: 950px;
+    height: 45px;
+    border-width: 4px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.Header-Search {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 55px;
+    height:55px;
+    margin-left: 1350px;
+    margin-top: -65px;
+    border-color: black;
+    border-width: 4px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+}
+
+.Masuk {
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 1500px;
+    font-size: 20px;
+    top: 90px;
+}
+
+.Masukk :hover {
+    transition: 0.3s;
+    color: #E0CF87;
+}
+
+.Judul {
+    font-size: 30px;
+    margin-left: 250px;
+    margin-top: 150px;
+}
+
+.Ket {
+    font-size: 25px;
+    margin-left: 250px;
+    margin-top: 50px;
+    font-style: normal;
+}
+
+.btnn {
+  display: inline-block;
+  padding: 12px 80px;
+  margin: 2px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.btn-edit {
+  background: #ffddec;
+  color: #000;
+  border: #000;
+}
+
+a.btnn.btn-edit {
+  display: block;
+  width: fit-content;
+  margin-top: 60px;
+  margin-left: 250px;
+}
+
+.btn-edit:hover {
+  background: #FF8FA3;
+}
+
+.Cont {
+    font-size: 30px;
+    margin-left: 250px;
+    margin-top: 100px;
+    font-style: normal;
+}
+
+.Foto {
+    width: 40px;
+    display: flex;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.Conts {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    margin-top: -30px;
+    margin-left: 310px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+}
+
+.Fotoo {
+    display: flex;
+    transform: translate(1000px, -500px);
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.9;
+    pointer-events: none;
+    animation: floating 6s ease-in-out infinite;
+}
+
+.circle1 {
+    width: 450px;
+    height: 450px;
+    background-color: #9ccdcf;
+    animation-delay: 0s;
+    bottom: 300px;
+    right: -1100px;
+}
+
+.circle2 {
+    width: 480px;
+    height: 480px;
+    background-color: #f7b28b;
+    animation-delay: 1.5s;
+    bottom: 320px;
+    right: -650px;
+}
+
+.circle3 {
+    width: 480px;
+    height: 480px;
+    background-color: #daabcf;
+    animation-delay: 3s;
+    bottom: 600px;
+    right: -850px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px) scale(1);
+    }
+    50% {
+        transform: translateY(-25px) scale(1.03);
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+}
