@@ -21,7 +21,7 @@
 ###
 
 <p align="left">✅ Main dashboard for quick navigation<br>
-✅ 14 subject pages with task & exam lists<br>
+✅ Users get CRUD (Create, Read, Update, and Delete) access<br>
 ✅ 1 dedicated page for upcoming deadlines<br>
 ✅ Responsive design for both desktop & mobile<br>
 ✅ Simple, elegant, and intuitive UI/UX<br>
@@ -70,7 +70,7 @@
 ###
 
 <p align="left">✅ Dashboard utama untuk navigasi cepat<br>
-✅ 14 halaman mata pelajaran dengan daftar tugas & ujian<br>
+✅ Pengguna mendapatkan akses CRUD (Membuat, Membaca, Memperbarui, dan Menghapus)<br>
 ✅ 1 halaman khusus untuk deadline yang semakin dekat<br>
 ✅ Desain responsif untuk desktop & mobile<br>
 ✅ Tampilan UI/UX sederhana, elegan, dan intuitif<br>
