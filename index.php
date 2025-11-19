@@ -42,7 +42,6 @@
 
         <img class="Fotoo" src="Foto/Homepage.png" alt="">
     </div>
-<!-- Some comment -->
 
 </body>
 
