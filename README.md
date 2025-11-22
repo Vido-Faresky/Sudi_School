@@ -29,7 +29,7 @@
 
 ###
 
-<h2 align="left">entities involved</h2>
+<h2 align="left">Entities Involved</h2>
 
 <p align="left">📚 Assignments<br>
 🗂️ Categories<br>
@@ -102,7 +102,7 @@
 
 ###
 
-<h2 align="left">entities involved</h2>
+<h2 align="left">Entitas yang Terlibat</h2>
 
 <p align="left">📚 Tugas<br>
 🗂️ Kategori<br>
