@@ -93,7 +93,7 @@
 
 ###
 
-<h2 align="left">How to Setup Database</h2>
+<h2 align="left">Cara Mengatur Basis Data (Database)</h2>
 
 <p align="left">1. Install file SQL yang terdapat dalam GitHub yang bernama sudi_school.sql.<br>
 2. Buka aplikasi Laragon.<br>
