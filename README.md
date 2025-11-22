@@ -29,6 +29,15 @@
 
 ###
 
+<h2 align="left">entities involved</h2>
+
+<p align="left">📚 Assignments<br>
+🗂️ Categories<br>
+📝 Subjects<br>
+👥 Users</p>
+
+###
+
 <h2 align="left">How to Setup Database</h2>
 
 <p align="left">1. Install the SQL file from GitHub named sudi_school.sql.<br>
@@ -90,6 +99,15 @@
 ✅ Desain responsif untuk desktop & mobile<br>
 ✅ Tampilan UI/UX sederhana, elegan, dan intuitif<br>
 ✅ Penyimpanan data aman dengan database MySQL</p>
+
+###
+
+<h2 align="left">entities involved</h2>
+
+<p align="left">📚 Tugas<br>
+🗂️ Kategori<br>
+📝 Mata Pelajaran<br>
+👥 Pengguna</p>
 
 ###
 
