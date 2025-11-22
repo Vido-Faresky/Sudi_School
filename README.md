@@ -29,6 +29,21 @@
 
 ###
 
+<h2 align="left">How to Setup Database</h2>
+
+<p align="left">1. Install the SQL file from GitHub named sudi_school.sql.<br>
+2. Open the Laragon application.<br>
+3. Click the button labeled Database.<br>
+4. Log in using the username root with no password.<br>
+5. Click the New button in the left menu.<br>
+6. In the Database Name field, enter sudi_school, then click the Create button.<br>
+7. Click the Import button on the top bar.<br>
+8. Click Choose File, then select the file you have installed.<br>
+9. Click the Import button at the bottom.<br>
+10. If you use a different database name (not sudi_school), you can change the database name in the config folder and in the db-connection.php file to match the name of the database you created.</p>
+
+###
+
 <h2 align="left">We code with</h2>
 
 ###
@@ -75,6 +90,21 @@
 ✅ Desain responsif untuk desktop & mobile<br>
 ✅ Tampilan UI/UX sederhana, elegan, dan intuitif<br>
 ✅ Penyimpanan data aman dengan database MySQL</p>
+
+###
+
+<h2 align="left">How to Setup Database</h2>
+
+<p align="left">1. Install file SQL yang terdapat dalam GitHub yang bernama sudi_school.sql.<br>
+2. Buka aplikasi Laragon.<br>
+3. Klik tombol bertuliskan Database.<br>
+4. Login dengan username root tanpa password.<br>
+5. Klik tombol New di menu sebelah kiri.<br>
+6. Pada bagian Database Name, masukkan nama sudi_school kemudian tekan tombol Create.<br>
+7. Klik tombol Import di bar bagian atas.<br>
+8. Klik bagian Choose File lalu pilih file yang telah di-install.<br>
+9. Klik tombol Import di bagian bawah.<br>
+10. Jika kamu menggunakan nama database yang berbeda (bukan sudi_school), kamu dapat mengubah nama database yang terdapat di folder config dan file db-connection.php menjadi nama database yang kamu gunakan.</p>
 
 ###
 
